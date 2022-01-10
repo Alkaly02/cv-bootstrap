@@ -1,0 +1,200 @@
+body{
+	margin: 0;
+	padding: 0
+}
+/*------------- main ---------------*/
+main{
+	width: 80%;
+	margin: 100px auto;
+	padding: 0 25px 0 0;
+	background-color: #DCDCDC;
+	display: grid;
+	grid-template-columns: 1fr 25px 2fr;
+	grid-template-areas: "aside . article";
+}
+/*------------- article --------------*/
+article{
+	grid-area: article;
+	color: #3D3D37;
+}
+article section{
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#work-experience .designation:not(:last-of-type){
+	border-bottom: 3px solid #DCDCDC;
+	margin: 0 0 0.5rem 0;
+}
+article h2{
+	font-size: 1.8em;
+	margin: 0 0 0.1em 0;
+}
+article h3{
+	font-size: 1.1em;
+	margin: 0 0 0 0;
+}
+[class*="icon-center"]{
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+}
+.blue-text{
+	font-size: 0.8em;
+	color: #5EB6DD;
+	margin: 0 0 0.3rem 0;
+}
+#hobbies .icon{
+	color: #5EB6DD;
+}
+
+/*------------ aside ------------------*/
+aside{
+	grid-area: aside;
+	min-width: 350px;
+	padding: 0 0 1rem 0;
+	background-color: #457DBB;
+	color: white;
+}
+#cv-profil img{
+	border-radius: 50%;
+}
+aside h2{
+	font-size: 1.5em;
+}
+.phone, .email, .adress{
+	margin: 0;
+}
+.detail{
+	color: #A2B5BF;
+	font-size: 0.9em;
+}
+.blue-border{
+	border-top: 1px solid #5EB6DD;
+	border-bottom: 2px solid #5EB6DD;
+}
+/*--------- technical-skills ----------*/
+.technical-skills{
+	position: relative;
+}
+.technical-skills p{
+	font-size: 0.9em;
+}
+.parent{
+	width: 95%;
+	height: 2px;
+	background-color: #046380;
+	margin: 0 0 1rem 0;
+}
+[class*="child"]{
+	height: 2px;
+	background-color: white;
+}
+[class*="circle"]{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	top: 70%;
+}
+.child-1{
+	width: 90%;
+}
+.circle-1{
+	right: 10%;
+}
+.child-2{
+	width: 60%;
+}
+.circle-2{
+	right: 40%;
+}
+.child-3{
+	width: 92%;
+}
+.circle-3{
+	right: 8%;
+}
+.child-4{
+	width: 80%;
+}
+.circle-4{
+	right: 20%;
+}
+.child-5{
+	width: 70%;
+}
+.circle-5{
+	right: 30%;
+}
+.child-6{
+	width: 85%;
+}
+.circle-6{
+	right: 15%;
+}
+.child-7{
+	width: 79%;
+}
+.circle-7{
+	right: 21%;
+}
+
+/*============== @media-queries ===============*/
+@media(max-width: 1250px){
+	main{
+		width: 90%;
+	}
+}
+@media(max-width: 1000px){
+	main{
+		width: 95%;
+	}
+}
+@media(max-width: 980px){
+	main{
+		width: 100%;
+	}
+}
+@media(max-width: 991px){
+	.icon-center{
+		display: block;
+	}
+}
+@media(max-width: 859px){
+	main{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "aside" 
+							 "article";
+		margin: 0;
+		padding: 0;
+	}
+	article, aside{
+		width: 100%;
+	}
+	#cv-infos .icon-center-infos{
+		font-size: 2em;
+	}
+	.circle-1{
+		right: 13%;
+	}
+	.circle-2{
+		right: 43%;
+	}
+	.circle-3{
+		right: 12%;
+	}
+	.circle-4{
+		right: 23%;
+	}
+	.circle-5{
+		right: 33%;
+	}
+	.circle-6{
+		right: 17%;
+	}
+	.circle-7{
+		right: 23%;
+	}
+}
